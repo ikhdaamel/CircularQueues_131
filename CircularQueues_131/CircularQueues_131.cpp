@@ -63,5 +63,11 @@ public:
 	void display() {
 		int FRONT_POSITION = FRONT;
 		int REAR_POSITION= REAR;
+
+		//cek apakah antrian kosong
+		if (FRONT == -1) {
+			cout << "queuenis empty\n";
+				return;
+		}
 	}
 };
