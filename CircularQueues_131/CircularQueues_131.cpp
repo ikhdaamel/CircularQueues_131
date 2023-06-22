@@ -105,7 +105,7 @@ int main() {
 
 	while (true) {
 		try {
-			cout << "menu" << endl;
+			cout << "\nmenu" << endl;
 			cout << "1. implement insert operation" << endl;
 			cout << "2. implement delete operation" << endl;
 			cout << "3. display values" << endl;
