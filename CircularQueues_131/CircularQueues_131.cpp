@@ -115,10 +115,14 @@ int main() {
 			cout << endl;
 
 			switch (ch) {
-				case '1'{
+			case '1': {
 					q.insert();
 					break;
 				}
+			case '2': {
+				q.remove();
+				break;
+			}
 			}
 		}
 	}
