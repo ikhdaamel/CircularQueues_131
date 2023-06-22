@@ -140,4 +140,6 @@ int main() {
 			cout << "check for the values entered" << endl;
 		}
 	}
+
+	return 0;
 }
