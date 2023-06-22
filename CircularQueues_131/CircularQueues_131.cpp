@@ -94,7 +94,7 @@ public:
 				cout << queue_array[FRONT_POSITION] << " ";
 				FRONT_POSITION++;
 			}
-		
+			cout << endl;
 		}
 	}
 };
