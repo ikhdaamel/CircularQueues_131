@@ -7,7 +7,7 @@ class Queues {
 
 public:
 	Queues() {								
-		FRONT = -1;										//set front = -1
+		FRONT = -1;										//step 1 ;set front = -1
 		REAR = -1;										//set rear = -1
 	}
 
@@ -25,18 +25,18 @@ public:
 		}
 
 		//cek apakah antrian kosong
-		if (FRONT == -1) {
-			FRONT = 0;
-			REAR = 0;
+		if (FRONT == -1) {							//step 1
+			FRONT = 0;								//step 1a
+			REAR = 0;								//step 1b
 		}
 		else {
 			//jika benar berada di posisi terakhir array, kembali ke awal array
-			if (REAR == max - 1)
-				REAR = 0;
+			if (REAR == max - 1)					//step 2
+				REAR = 0;							//step 2a
 			else
-				REAR = REAR + 1;
+				REAR = REAR + 1;					//step 3
 		}
-		queue_array[REAR] = num;
+		queue_array[REAR] = num;					//step 4
 	}
 
 	void remove() {
@@ -46,5 +46,11 @@ public:
 			return;
 		}
 		cout << "\nthe element deleted from the queue is :" << queue_array[FRONT] << "\n";
+
+		//cek jika antrian hanya memiliki satu elemen
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
 	}
 };
