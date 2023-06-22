@@ -127,6 +127,13 @@ int main() {
 				q.display();
 				break;
 			}
+			case'4': {
+				return 0;
+			}
+			default: {
+				cout << "invalid option!!" << endl;
+				break;
+			}
 			}
 		}
 	}
