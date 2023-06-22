@@ -71,5 +71,14 @@ public:
 		}
 
 		cout << "\nelements in the queue are....\n";
+
+		//jika FRONT_POSITION <= REAR_POSITiOn, iterasi dari FRONT hingga REAR
+		if (FRONT_POSITION <= REAR_POSITION) {
+			while (FRONT_POSITION <= REAR_POSITION) {
+				cout << queue_array[FRONT_POSITION] << " ";
+				FRONT_POSITION++;
+			}
+			cout << endl;
+		}
 	}
 };
